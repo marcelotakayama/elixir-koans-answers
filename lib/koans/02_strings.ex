@@ -4,7 +4,7 @@ defmodule Strings do
   @intro "Strings"
 
   koan "Strings are there to represent text" do
-    assert "hello" == ___
+    assert "hello" == "hello"
   end
 
   koan "Values may be inserted into strings by interpolation" do

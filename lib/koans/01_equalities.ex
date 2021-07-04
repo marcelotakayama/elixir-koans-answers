@@ -30,10 +30,10 @@ defmodule Equalities do
   end
 
   koan "Some may be looking for bigger things" do
-    assert ___ > 3
+    assert 4 > 3
   end
 
   koan "Others are happy with less" do
-    assert ___ < 3
+    assert 2
   end
 end
