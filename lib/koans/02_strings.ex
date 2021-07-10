@@ -12,7 +12,7 @@ defmodule Strings do
   end
 
   koan "They can be put together" do
-    assert "hello world" == ___ <> "world"
+    assert "hello world" == "hello " <> "world"
   end
 
   koan "Or pulled apart into a list when needed" do
