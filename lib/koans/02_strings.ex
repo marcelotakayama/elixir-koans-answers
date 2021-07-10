@@ -20,26 +20,26 @@ defmodule Strings do
   end
 
   koan "Be careful, a message may be altered" do
-    assert String.replace("An awful day", "awful", "incredible") == ___
+    assert String.replace("An awful day", "awful", "incredible") == "An incredible day"
   end
 
   koan "But strings never lie about themselves" do
-    assert true == String.contains?("An incredible day", ___)
+    assert true == String.contains?("An incredible day", "a")
   end
 
   koan "Sometimes you want just the opposite of what is given" do
-    assert ___ == String.reverse("ananab")
+    assert "banana" == String.reverse("ananab")
   end
 
   koan "Other times a little cleaning is in order" do
-    assert String.trim("  \n banana\n  ") == ___
+    assert String.trim("  \n banana\n  ") == "banana"
   end
 
   koan "Repetition is the mother of learning" do
-    assert String.duplicate("String", 3) == ___
+    assert String.duplicate("String", 3) == "StringStringString"
   end
 
   koan "Strings can be louder when necessary" do
-    assert String.upcase("listen") == ___
+    assert String.upcase("listen") == "LISTEN"
   end
 end
