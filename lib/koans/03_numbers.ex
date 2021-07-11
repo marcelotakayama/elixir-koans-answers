@@ -5,11 +5,11 @@ defmodule Numbers do
   @intro "Why is the number six so scared? Because seven eight nine!\nWe should get to know numbers a bit more!"
 
   koan "Is an integer equal to its float equivalent?" do
-    assert 1 == 1.0 == ___
+    assert 1 == 1.0 == true
   end
 
   koan "Is an integer threequal to its float equivalent?" do
-    assert 1 === 1.0 == ___
+    assert 1 === 1.0 == false
   end
 
   koan "Revisit division with threequal" do
